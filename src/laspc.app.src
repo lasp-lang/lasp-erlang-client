@@ -1,0 +1,15 @@
+{application, laspc,
+ [{description, "A Lasp client library that communicates over Protocol Buffers."},
+  {vsn, "0.0.1"},
+  {registered, []},
+  {applications,
+   [kernel,
+    stdlib,
+    lasp_pb
+   ]},
+  {env,[]},
+  {modules, []},
+  {maintainers,["Goncalo Tomas"]},
+  {links,[{"Github","https://github.com/lasp-lang/lasp-erlang-client"}]},
+  {licenses,["Apache 2"]}
+ ]}.

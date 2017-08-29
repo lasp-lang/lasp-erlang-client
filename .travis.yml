@@ -1,0 +1,11 @@
+dist: trusty
+language: erlang
+sudo: false
+otp_release:
+  - 20.0
+  - 19.3
+  - 18.3
+install:
+  - make
+script:
+  - rebar3 compile
