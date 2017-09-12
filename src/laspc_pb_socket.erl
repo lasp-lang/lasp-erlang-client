@@ -29,7 +29,7 @@ get(Sock, Key, KeyType) when is_port(Sock), is_list(Key), is_atom(KeyType) ->
     send_req(Sock, {req, {get, {Key, KeyType}}}).
 
 update(Sock, Key, KeyType, Op) ->
-    send_req(Sock, {req, {put, {{Key, KeyType}, Op, node()}}}).
+    send_req(Sock, {req, {put, {{Key, KeyType}, Op}}}).
 
 send_req(Sock, Req) ->
     gen_tcp:send(Sock, encode_pb(Req)),
